@@ -66,13 +66,13 @@ salmon index -i index -k 31 -p 4 -t trinity_pwal_v2.supertrans.w.fluors.fa
                       # -N 1 means all cores will be on the same node)
 #SBATCH -J Alevin_as0400                       #name job
 #SBATCH -t 3-00:00                         # Runtime in D-HH:MM format
-#SBATCH -A LU2021-2-7
+#SBATCH -A {lunarc code here}
 #SBATCH -p lu
 #SBATCH --mem-per-cpu=9000                  # Memory per cpu 200GB total
 #SBATCH -o hostname_%j.out                 # File to which STDOUT will be written, including job ID
 #SBATCH -e hostname_%j.err                 # File to which STDERR will be written, including job ID
 #SBATCH --mail-type=ALL                    # Type of email notification- BEGIN,END,FAIL,ALL
-#SBATCH --mail-user=at0400ra-s@student.lu.se   # Email to which notifications will be sent
+#SBATCH --mail-user=email_address  # Email to which notifications will be sent
 
 #enter wd
 cd /home/as0400/Documents/salmon-latest_linux_x86_64/bin
